@@ -1,0 +1,19 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-menu-link {
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
