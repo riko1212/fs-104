@@ -2,12 +2,40 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1166px;
+  /* width: 1166px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -38,6 +66,11 @@ a {
 }
 
 /* ======HEADER======== */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
 
 .header-logo {
   color: #111;
@@ -70,7 +103,13 @@ a {
 /* ======HERO======== */
 
 .hero {
+  padding-bottom: 80px;
+}
+
+.hero-container {
   background-color: rgba(17, 17, 17, 0.6);
+  border-radius: 30px;
+  padding: 380px 40px 40px 40px;
 }
 
 .hero-title {
@@ -79,6 +118,8 @@ a {
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  max-width: 484px;
+  margin-bottom: 32px;
 }
 
 .hero-btn {
@@ -110,6 +151,8 @@ a {
 
 .features {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .features-list {
@@ -123,6 +166,7 @@ a {
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 18px;
 }
 
 .features-item-text {
@@ -137,9 +181,14 @@ a {
 /* ============TASTE=========== */
 
 .taste {
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .taste-title {
+  max-width: 412px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .taste-text {
@@ -148,6 +197,9 @@ a {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  max-width: 486px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .taste-list {
