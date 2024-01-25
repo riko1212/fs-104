@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
 }
 
 p,
@@ -29,9 +30,9 @@ button {
 }
 
 .container {
-  width: 100%;
-  max-width: 1166px;
-  /* width: 1166px; */
+  /* width: 100%;
+  max-width: 1166px; */
+  width: 1166px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -72,16 +73,36 @@ button {
   padding-bottom: 32px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   color: #111;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
 }
 
 .header-logo-italic {
   font-style: italic;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 90px;
+  justify-content: space-between;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 24px;
 }
 
 .header-menu-link {
@@ -96,6 +117,11 @@ button {
 .header-menu-link:focus,
 .header-menu-link:active {
   color: #fd9222;
+}
+
+.header-soc-list {
+  display: flex;
+  gap: 14px;
 }
 
 /* ======================= */
@@ -122,12 +148,22 @@ button {
   margin-bottom: 32px;
 }
 
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+
 .hero-btn {
   color: #fff;
   font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  background: #fd9222;
+  border: none;
+  padding: 14px 40px;
+  margin-right: 14px;
 }
 
 .hero-made-link {
@@ -135,6 +171,10 @@ button {
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 14px 40px;
 }
 
 .hero-scroll-link {
@@ -143,6 +183,7 @@ button {
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  margin-left: auto;
 }
 
 /* ======================= */
@@ -156,9 +197,13 @@ button {
 }
 
 .features-list {
+  display: flex;
+  gap: 88px;
+  padding: 0 18px;
 }
 
 .features-item {
+  flex-basis: calc((100% - 2 * 88px) / 3);
 }
 
 .features-subtitle {
@@ -203,12 +248,22 @@ button {
 }
 
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 24px 32px; */
+  column-gap: 32px;
+  row-gap: 24px;
 }
 
 .taste-item {
+  background-color: #fd9222;
+  border-radius: 15px;
+  padding: 28px 23px;
+  flex-basis: calc((100% - 96px) / 4);
 }
 
 .taste-picture {
+  margin-bottom: 36px;
 }
 
 .taste-subtitle {
@@ -225,12 +280,25 @@ button {
 /* ==========MADE============= */
 
 .made {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .made-title {
+  margin-bottom: 50px;
+}
+
+.made-wrapper {
+  display: flexbox;
+  gap: 20px;
 }
 
 .made-image {
+}
+
+.made-content {
+  padding: 32px;
+  background-color: #ffffff;
 }
 
 .made-subtitle {
@@ -238,12 +306,18 @@ button {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 28px;
 }
 
 .made-list {
 }
 
 .made-item {
+  margin-bottom: 24px;
+}
+
+.made-item:last-child {
+  margin-bottom: 0;
 }
 
 .made-item-text {
