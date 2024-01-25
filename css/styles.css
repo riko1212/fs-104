@@ -289,7 +289,7 @@ button {
 }
 
 .made-wrapper {
-  display: flexbox;
+  display: flex;
   gap: 20px;
 }
 
