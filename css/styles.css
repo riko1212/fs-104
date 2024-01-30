@@ -124,6 +124,11 @@ button {
   gap: 14px;
 }
 
+.header-soc-icon {
+  fill: transparent;
+  stroke: #111111;
+}
+
 /* ======================= */
 
 /* ======HERO======== */
@@ -134,6 +139,15 @@ button {
 
 .hero-container {
   background-color: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../images/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 30px;
   padding: 380px 40px 40px 40px;
 }
@@ -288,6 +302,14 @@ button {
   margin-bottom: 50px;
 }
 
+/* .made-title::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/loved-img-2.jpeg);
+  display: inline-block;
+} */
+
 .made-wrapper {
   display: flex;
   gap: 20px;
@@ -314,6 +336,21 @@ button {
 
 .made-item {
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.made-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  /* box-shadow: 0 0 2px 1px #eceded; */
+  display: block;
+  flex-shrink: 0;
 }
 
 .made-item:last-child {
@@ -511,3 +548,33 @@ button {
 }
 
 /* ========================== */
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.icon-item {
+  width: 40px;
+  height: 40px;
+}
+.icon-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(88, 134, 234);
+  border-radius: 50%;
+}
+.icon-icon {
+  fill: transparent;
+  stroke: #ffffff;
+}
+
+.icon-link:hover {
+  background-color: aqua;
+}
+
+.icon-link:hover .icon-icon {
+  stroke: rgb(241, 147, 40);
+}
